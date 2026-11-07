@@ -1,0 +1,330 @@
+/* contact/page.module.css */
+
+/* Page Hero */
+.pageHero {
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, #162275 100%);
+  padding: 72px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.pageHeroBg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,210,0,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.pageHeroInner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+}
+
+.breadcrumb a { color: var(--gold); font-weight: 600; }
+
+.pageTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 900;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.pageSubtitle {
+  font-size: 17px;
+  color: rgba(255,255,255,0.75);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* Contact Methods */
+.contactMethods {
+  background: var(--gray-50);
+}
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.methodCard {
+  background: white;
+  border-radius: 24px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.methodCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--gold);
+}
+
+.methodIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  transition: var(--transition);
+}
+
+.methodCard:hover .methodIcon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.methodLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray-500);
+}
+
+.methodValue {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.methodSub {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.methodBtn {
+  margin-top: auto;
+}
+
+/* Map Section */
+.mapSection {
+  background: white;
+}
+
+.mapGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.mapWrap {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--gray-200);
+}
+
+.mapHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.mapHeader h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.mapPlaceholder {
+  position: relative;
+  background: #E8F0F8;
+}
+
+.mapSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mapPinInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: white;
+  border-top: 1px solid var(--gray-200);
+  font-size: 13px;
+  color: var(--gray-700);
+}
+
+.mapPinDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--navy);
+  flex-shrink: 0;
+}
+
+/* Info Panel */
+.mapInfoPanel {
+  background: var(--gray-50);
+  border-radius: 24px;
+  padding: 28px;
+  border: 2px solid var(--gray-200);
+}
+
+.infoPanelTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.infoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.infoItemIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoItemLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 4px;
+}
+
+.infoItemValue {
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.infoLink {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  transition: var(--transition-fast);
+}
+
+.infoLink:hover {
+  color: var(--green);
+}
+
+.infoCta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* FAQ */
+.faqSection {
+  background: var(--gray-50);
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.faqCard {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--gold);
+  transition: var(--transition);
+}
+
+.faqCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.faqQ {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.faqNum {
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.faqQ h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.faqA {
+  font-size: 14px;
+  color: var(--gray-500);
+  line-height: 1.7;
+  padding-left: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mapGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .methodsGrid { grid-template-columns: 1fr; }
+  .faqGrid { grid-template-columns: 1fr; }
+}

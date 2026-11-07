@@ -1,0 +1,21 @@
+/* admin/layout.module.css */
+.adminShell {
+  display: flex;
+  min-height: 100vh;
+  background: #F4F5F7;
+}
+
+.adminMain {
+  flex: 1;
+  margin-left: 220px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .adminMain {
+    margin-left: 0;
+  }
+}

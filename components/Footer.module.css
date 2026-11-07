@@ -1,0 +1,322 @@
+/* Footer.module.css */
+
+/* ---- Contact Strip ---- */
+.contactStrip {
+  background: var(--navy);
+  color: white;
+  padding: 20px 0;
+  border-top: 4px solid var(--gold);
+}
+
+.stripInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.stripAddress {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.stripIcon {
+  width: 44px;
+  height: 44px;
+  background: var(--gold);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+.stripLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.stripText {
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+
+.stripDivider {
+  width: 1px;
+  height: 60px;
+  background: rgba(255,255,255,0.2);
+}
+
+.stripContact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.phoneLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  transition: var(--transition-fast);
+}
+
+.phoneLink:hover {
+  color: var(--gold);
+}
+
+.phoneIcon {
+  width: 44px;
+  height: 44px;
+  background: var(--gold);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.phoneLink:hover .phoneIcon {
+  transform: rotate(10deg) scale(1.1);
+  background: var(--gold-light);
+}
+
+.whatsappLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.whatsappLink:hover {
+  background: #1ebe5a;
+  transform: translateY(-2px);
+}
+
+.whatsappIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- Main Footer ---- */
+.footerMain {
+  background: var(--navy-dark);
+  padding: 64px 0 40px;
+  color: rgba(255,255,255,0.75);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 48px;
+}
+
+/* ---- Brand ---- */
+.footerBrand {}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footerLogoName {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+}
+
+.footerLogoSub {
+  font-size: 12px;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.footerTagline {
+  font-size: 15px;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.footerMission {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 20px;
+}
+
+.footerSocial {
+  display: flex;
+  gap: 10px;
+}
+
+.socialBtn {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: var(--transition);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.socialBtn:hover {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+/* ---- Footer Column ---- */
+.footerCol {}
+
+.footerColTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footerColTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 36px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  transition: var(--transition-fast);
+}
+
+.footerLink:hover {
+  color: var(--gold);
+  transform: translateX(4px);
+}
+
+/* ---- Contact List ---- */
+.footerContactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.5;
+}
+
+.contactLink {
+  color: rgba(255,255,255,0.65);
+  transition: var(--transition-fast);
+}
+
+.contactLink:hover {
+  color: var(--gold);
+}
+
+/* ---- Bottom Bar ---- */
+.footerBottom {
+  background: #04081F;
+  padding: 16px 0;
+}
+
+.bottomInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stripInner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .stripDivider {
+    width: 80px;
+    height: 1px;
+  }
+
+  .stripAddress {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stripContact {
+    justify-content: center;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bottomInner {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+}

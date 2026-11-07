@@ -1,0 +1,98 @@
+/* FloatingButtons.module.css */
+.fabContainer {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 999;
+}
+
+.fab {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.fab:hover {
+  transform: scale(1.12) translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.3);
+}
+
+.fabWhatsapp {
+  background: #25D366;
+  animation: pulse-whatsapp 2.5s ease-in-out infinite;
+}
+
+.fabPhone {
+  background: var(--navy);
+}
+
+@keyframes pulse-whatsapp {
+  0%, 100% {
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 6px 32px rgba(37, 211, 102, 0.7), 0 0 0 10px rgba(37, 211, 102, 0.1);
+  }
+}
+
+.fabTooltip {
+  position: absolute;
+  right: 72px;
+  background: rgba(10, 15, 50, 0.92);
+  color: white;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.fabTooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-right: none;
+  border-left-color: rgba(10, 15, 50, 0.92);
+}
+
+.fab:hover .fabTooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .fabContainer {
+    bottom: 24px;
+    right: 20px;
+    gap: 10px;
+  }
+
+  .fab {
+    width: 52px;
+    height: 52px;
+  }
+
+  .fabTooltip {
+    display: none;
+  }
+}
