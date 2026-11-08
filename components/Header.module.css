@@ -262,3 +262,16 @@
     font-size: 15px;
   }
 }
+
+/* Warm editorial identity for the redesigned public website */
+.topBar{background:#173b34;border-bottom:0;color:#e8eee6;padding:7px 0;font-size:11px}
+.topContact{color:#dceaa9}.topWhatsapp{color:#cde2c5}.topBarRight{color:#c0d0c5}
+.header{background:rgba(251,248,240,.96);border-bottom:1px solid #e8e9df}
+.header.scrolled{background:rgba(251,248,240,.98);box-shadow:0 8px 30px rgba(24,59,53,.08)}
+.headerInner{height:82px}
+.logoName{color:#183b35;font-size:19px;letter-spacing:-.4px}.logoSubtitle{color:#64886b;font-size:10px;letter-spacing:1px}
+.navLink{color:#53665b;font-size:13px;padding:10px 17px}.navLink:hover{background:#edf1e7;color:#183b35}
+.headerActions .btn-primary{background:#183b35;color:#fff;box-shadow:none;border-radius:30px}.headerActions .btn-primary:hover{background:#315f4c}
+.mobileMenu{background:#fbf8f0;border-color:#e2e7dd}.mobileNavLink:hover{background:#edf1e7;color:#183b35}
+.hamburger,.hamburger::before,.hamburger::after{background:#183b35}
+@media(max-width:480px){.headerInner{height:72px}.topBarLeft{gap:10px}}

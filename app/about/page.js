@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'About Us | D Sun Rehab & Autism Centre Patna',
   description:
-    'Learn about D Sun Rehab & Autism Centre — our mission, vision, team, and commitment to empowering children with autism and developmental needs in Patna, Bihar.',
+    'Get to know D Sun Rehab & Autism Centre in Patna, Bihar: our child-centred philosophy, family partnership, therapy services and commitment to supporting children with autism and developmental needs.',
 };
 
 const values = [
@@ -146,7 +146,7 @@ export default function AboutPage() {
               <h2 className="section-title">Empowering Abilities, Enriching Lives</h2>
               <div className="gold-line"></div>
               <p className={styles.storyText}>
-                D Sun Rehab & Autism Centre was established with a singular vision: to create a safe, nurturing, and professional environment where children with autism and other developmental challenges can thrive.
+                D Sun Rehab & Autism Centre was established with a simple purpose: to offer children and families a welcoming place to seek guidance, build skills and work towards meaningful developmental goals. We recognise that beginning a therapy journey can bring many questions. Our role is to listen carefully, explain available support and help families understand practical next steps.
               </p>
               <p className={styles.storyText}>
                 Located in the heart of Patna, Bihar, our centre brings together a team of qualified therapists, special educators, and behavior analysts who are passionate about making a real difference in the lives of children and their families.
@@ -155,8 +155,24 @@ export default function AboutPage() {
                 We understand that every child is unique, with their own strengths, challenges, and learning styles. That's why we take a highly individualized approach to therapy, crafting personalized programs that meet each child where they are and help them grow at their own pace.
               </p>
               <p className={styles.storyText}>
-                Our state-of-the-art facility in Ali Residency Apartments, Ramna Road, near Patna University, is designed to be child-friendly, stimulating, and safe — a place where children love to come and families feel confident and supported.
+                Our centre is located at Ali Residency Apartments, Ramna Road, near Patna University in Patna. We aim to make sessions structured, welcoming and responsive to each child's sensory, communication and learning needs. We also value the knowledge parents bring: their observations help us understand what is working and where additional support may be useful.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.aboutPhotoSection}>
+        <div className="container">
+          <div className={styles.aboutPhotoGrid}>
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1100&q=85" alt="Child taking part in a supported play and learning activity" />
+            <div>
+              <span className="section-label">Our philosophy</span>
+              <h2 className="section-title">Progress is personal. Support should be too.</h2>
+              <div className="gold-line"></div>
+              <p>There is no single timetable for development. Some children may be working on communication, others on sensory regulation, motor coordination, social participation or everyday routines. We respect these differences and encourage goals that are specific, realistic and useful to the child and family.</p>
+              <p>We aim to create a positive partnership in which children are treated with dignity, their strengths are recognised and families feel heard. Therapy is not only about what happens during a session; it is also about helping useful skills become part of daily life.</p>
+              <p>We encourage parents and caregivers to share questions, observations and feedback throughout the journey. This ongoing conversation helps the support plan remain relevant as a child grows and their needs change.</p>
             </div>
           </div>
         </div>

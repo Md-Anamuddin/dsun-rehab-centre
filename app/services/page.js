@@ -145,7 +145,7 @@ export default function ServicesPage() {
             <h2 className="section-title">6 Specialized Therapy Programs</h2>
             <div className="gold-line"></div>
             <p className="section-desc">
-              Each program is tailored to the individual child's needs, with qualified therapists providing one-on-one and group sessions.
+              Children develop new skills in different ways and at different rates. We offer a coordinated range of therapy and learning services that can be considered individually or combined when appropriate. Following an initial discussion and assessment, families can talk with our team about priorities, suitable session formats and goals that are meaningful at home, school and in the community. The descriptions below explain what each service may support; the right plan is always based on the individual child.
             </p>
           </div>
 
@@ -157,6 +157,14 @@ export default function ServicesPage() {
                 className={`${styles.serviceDetail} ${index % 2 === 1 ? styles.serviceDetailReverse : ''}`}
               >
                 <div className={styles.serviceDetailVisual}>
+                  <img className={styles.servicePhoto} src={[
+                    "https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=1000&q=85",
+                    "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=85",
+                    "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1000&q=85",
+                    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=85",
+                    "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1000&q=85",
+                    "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1000&q=85"
+                  ][index]} alt={`${service.title} session`} />
                   <div className={styles.serviceDetailIcon} style={{ background: service.gradient }}>
                     <span className={styles.serviceDetailEmoji}>{service.icon}</span>
                     <div className={styles.serviceDetailNum}>0{index + 1}</div>

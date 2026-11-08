@@ -1,7 +1,5 @@
 import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import FloatingButtons from '@/components/FloatingButtons';
+import SiteChrome from '@/components/SiteChrome';
 
 export const metadata = {
   title: 'D Sun Rehab & Autism Centre | Patna, Bihar',
@@ -30,10 +28,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <FloatingButtons />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

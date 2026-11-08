@@ -320,3 +320,7 @@
     gap: 4px;
   }
 }
+
+/* Matching forest-green and soft-lime brand finish */
+.contactStrip{background:#315f4c;border-top:0}.stripIcon,.phoneIcon{background:#d8e99b;color:#183b35}.stripLabel{color:#d8e99b}.phoneLink:hover{color:#d8e99b}.whatsappLink{background:#477e65}.whatsappLink:hover{background:#315f4c}
+.footerMain{background:#153b35}.footerLogoName{color:#fff}.footerLogoSub,.footerTagline{color:#d8e99b}.footerColTitle:after{background:#d8e99b}.socialBtn:hover{background:#d8e99b;color:#183b35;border-color:#d8e99b}.footerBottom{background:#102d28}

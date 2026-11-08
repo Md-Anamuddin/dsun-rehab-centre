@@ -4,34 +4,34 @@
    DESIGN TOKENS
    ============================================ */
 :root {
-  --navy: #0D1B5E;
-  --navy-dark: #080F3A;
-  --navy-light: #162275;
-  --gold: #FFD200;
-  --gold-dark: #E6BC00;
-  --gold-light: #FFE566;
-  --green: #1B8B3B;
-  --green-light: #22A347;
-  --green-dark: #146B2D;
+  --navy: #183B35;
+  --navy-dark: #12332D;
+  --navy-light: #315F4C;
+  --gold: #D8E99B;
+  --gold-dark: #C5D982;
+  --gold-light: #EAF2C9;
+  --green: #477E65;
+  --green-light: #6F9A78;
+  --green-dark: #315F4C;
   --white: #FFFFFF;
-  --gray-50: #F8F9FC;
-  --gray-100: #F0F2F8;
-  --gray-200: #E2E6F0;
-  --gray-300: #C8CDE0;
-  --gray-500: #8892B0;
-  --gray-700: #4A5568;
-  --gray-900: #1A202C;
-  --orange: #FF6B35;
+  --gray-50: #FBF8F0;
+  --gray-100: #F4F0E7;
+  --gray-200: #E2E7DD;
+  --gray-300: #C9D2C7;
+  --gray-500: #829087;
+  --gray-700: #53665B;
+  --gray-900: #183B35;
+  --orange: #E88C70;
   --purple: #7B5EA7;
   --teal: #0891B2;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(13, 27, 94, 0.08);
-  --shadow-md: 0 8px 24px rgba(13, 27, 94, 0.12);
-  --shadow-lg: 0 16px 48px rgba(13, 27, 94, 0.18);
-  --shadow-xl: 0 24px 64px rgba(13, 27, 94, 0.24);
-  --shadow-gold: 0 8px 32px rgba(255, 210, 0, 0.3);
-  --shadow-green: 0 8px 32px rgba(27, 139, 59, 0.3);
+  --shadow-sm: 0 2px 8px rgba(24, 59, 53, 0.06);
+  --shadow-md: 0 8px 24px rgba(24, 59, 53, 0.09);
+  --shadow-lg: 0 16px 48px rgba(24, 59, 53, 0.13);
+  --shadow-xl: 0 24px 64px rgba(24, 59, 53, 0.18);
+  --shadow-gold: 0 8px 32px rgba(216, 233, 155, 0.35);
+  --shadow-green: 0 8px 32px rgba(71, 126, 101, 0.22);
 
   /* Transitions */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
